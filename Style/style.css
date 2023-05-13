@@ -1,0 +1,225 @@
+* {
+    transition: 250ms;
+    list-style: none;
+    outline: none;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    color: white;
+    cursor: default;
+    overflow: hidden;
+}
+
+::selection {
+    background-color: #00a2ff;
+    color: black;
+}
+
+body {
+    background-color: #111;
+}
+
+#description{
+    font-size: 2.2vmin;
+}
+
+a {
+    color: #999;
+    cursor: pointer;
+}
+
+a:hover {
+    color: rgb(0, 128, 202);
+}
+
+#linkno {
+    color: #999;
+    cursor: default;
+}
+
+.Background {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    align-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: #111;
+}
+
+.logo {
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+    position: absolute;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    top: 4vmin;
+}
+
+.logo h4 {
+    font-size: 3vmin;
+    cursor: pointer;
+}
+
+.logo img {
+    width: 6vmin;
+    cursor: pointer;
+}
+
+.Container {
+    margin-top: 3.5vmin;
+    background-color: #151515;
+    box-sizing: border-box;
+    padding: 7vmin 1vmin 2vmin 1vmin;
+    border-radius: 2vh;
+    border-top: 1px solid #222;
+    border-left: 1px solid #222;
+    border-right: 1px solid #191919;
+    border-bottom: 1px solid #191919;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow:
+     0 1vmin 1vmin rgba(0,0,0,.2),
+     0 2vmin 2vmin rgba(0,0,0,.2),
+     0 4vmin 4vmin rgba(0,0,0,.2),
+     0 8vmin 8vmin rgba(0,0,0,.2),
+     0 16vmin 16vmin rgba(0,0,0,.2),
+     0 32vmin 32vmin rgba(0,0,0,.2);
+}
+
+.welcome {
+    padding-bottom: 3vmin;
+    margin-bottom: 2vmin;
+}
+
+
+h4 {
+    color: #bbb;
+    font-size: 3vmin;
+}
+
+h2 {
+    font-size: 4vmin;
+    margin-top: 1vmin;
+}
+.form {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.typepass,
+.typemail {
+    margin: 5px;
+}
+
+#description {
+    margin: 0 .5rem;
+    margin-top: 2vmin;
+}
+
+.typemail input,
+.typepass input {
+    transition: 150ms ease-in;
+    height: 7vmin; 
+    width: 55vmin;
+    background-color: #101010;
+    border: 1px solid #252525;
+    border-radius: 1vmin;
+    padding: 1vmin 2vmin;
+    font-size: 2.2vmin;
+    margin-top: 1vmin;
+    cursor: text;
+}
+
+.passdescr {
+    display: flex;
+    justify-content: space-between;
+}
+
+#sub {
+    transition: 150ms ease-out;
+    color: white;
+    margin-top: 3vmin;
+    border-radius: 1vmin;
+    width: 55vmin;
+    height: 6vmin;
+    border: none;
+    background-color: rgb(0, 162, 255);
+    font-size: 2.2vmin;
+    border-color: black;
+    cursor: pointer;
+}
+
+#sub:hover {
+    transition: 150ms ease-in;
+    background-color: rgb(0, 128, 202);
+    border-color: black;;
+}
+
+#sub:active {
+    transition: 150ms ease-in;
+    width: 55vmin;
+    background: rgb(0, 120, 156);
+}
+
+.createacc {
+    margin: 2vmin 0vmin .5vmin 0vmin;
+    font-size: 2.2vmin;
+}
+
+.loginwith {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 2vmin 0vmin 1vmin 0vmin;
+}
+
+.loginwith img {
+    width: 5.5vmin;
+}
+
+.typemail input:focus,
+.typepass input:focus {
+    transition: 150ms ease-in;
+    background-color: #111;
+    border: 1px solid rgba(0,0,0,.2);
+    border-bottom: 1px solid rgb(0, 162, 255);
+}
+
+.typemail input:hover,
+.typepass input:hover {
+    transition: 150ms ease-in;
+    background-color: #121212;
+    border: 1px solid rgba(0,0,0,.2);
+    border-bottom: 1px solid rgb(0, 162, 255);
+}
+
+#sub2 {
+    transition: 150ms ease-in;
+    color: lightskyblue;
+    margin-top: 3vmin;
+    border-radius: 5vmin;
+    width: 6vmin;
+    height: 6vmin;
+    border: 1px solid rgb(0, 162, 255);
+    background-color: #111;
+    font-size: 2.2vmin;
+    cursor: pointer;
+    display: none;
+}
+
+#sub2:hover {
+    transition: 250ms ease-in;
+    border-color: rgb(0, 120, 156);
+    color: rgb(0, 128, 202);
+}
+
+#sub2:active {
+    transition: 250ms ease-in;
+}

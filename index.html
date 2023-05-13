@@ -1,0 +1,103 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style/style.css">
+    <link rel="stylesheet" href="Style/menu.css">
+    <title>Login • RoundRost</title>
+    
+</head>
+<body>
+    <!-- all -->
+    <div id="all" class="All">
+        <div class="Background">
+            <div class="logo">
+                <img id="logoimg" src="Assets/logo.svg" alt="" width="32px">
+                <h4 id="logotext">&nbsp;RoundHost</h4>
+            </div>
+            <div class="Container">
+                <div class="Items">
+                    <div class="welcome">
+                        <h4>Welcome Back</h4>
+                        <h2>Login into your account</h2>
+                    </div>
+                    <div class="form">
+                        <div class="typemail">
+                            <label id="description" for="mail">E-mail</E-mailbr></label><br>
+                            <input id="mail" type="email" placeholder="Enter your e-mail adress">
+                        </div>
+                        <div class="typepass">
+                            <div class="passdescr">
+                                <label id="description" for="pass">Password</label><br>
+                                <a id="description" href="#resetpassword">forgot password?</a>
+                            </div>
+                            <input id="pass" type="password" placeholder="Enter your password">
+                        </div>
+                        <input id="sub" class="submitbtn" type="submit" value="Login Now" onclick="loginOP()">
+                        <input id="sub2" class="submitbtn2" type="submit" value="OK" onclick="loginCL()">
+                        <div class="createacc">
+                            <a id="linkno">Doesn't have an account?<a>
+                            <a href="#createaccount">Create account here</a>        
+                        </div>
+                        <div class="loginwith">
+                            <img src="Assets/icons8-google-logo.svg" alt="Google">
+                            <img src="Assets/icons8-github.svg" alt="GitHub">
+                            <img src="Assets/icons8-linkedin-circundado.svg" alt="LinkedIn">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- all -->
+
+    <div class="menu" id="Menu">
+        <img id="fstarrow" src="Assets/leftt-arrow.svg" onclick="openBar()" alt="open">
+    </div>
+
+    <div id="Close" class="close">
+        <img id="scdarrow" src="Assets/right-arrow.svg" alt="close" onclick="closeBar()">
+    </div>
+
+        <div id="sideBar" class="sidebar">
+            <div id="List" class="list">
+                <button id="menutittle">Options</button>
+                <button>About</button>
+                <button>Services</button>
+                <button>Clients</button>
+                <button>Contact</button>
+                <button>Terms and Conditions</button>
+            </div>
+        </div>
+
+    <script>
+        function openBar(){
+            document.getElementById("sideBar").style.transition = "all 250ms";
+            document.getElementById("all").style.width = "82vmax";
+            document.getElementById("sideBar").style.width = "20vmax";
+            document.getElementById("List").style.display = "grid";
+            document.getElementById("Close").style.right = "16.5vmax";
+            document.getElementById("Close").style.zIndex = "1";
+        }
+        function closeBar(){
+            document.getElementById("sideBar").style.transition = "all 250ms";
+            document.getElementById("all").style.width = "100vmax";
+            document.getElementById("sideBar").style.width = "0";
+            document.getElementById("List").style.display = "none";
+            document.getElementById("Close").style.right = "0";
+            document.getElementById("Close").style.zIndex = "-1";
+        }
+
+
+        function loginOP(){
+            document.getElementById("sub").style.display = "none";
+            document.getElementById("sub2").style.display = "block";
+        }
+        function loginCL(){
+            document.getElementById("sub").style.display = "block";
+            document.getElementById("sub2").style.display = "none";
+        }
+    </script>
+</body>
+</html>

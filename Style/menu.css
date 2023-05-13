@@ -1,0 +1,80 @@
+.menu {
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 5vmin;
+    height: 100vmin;
+    color: white;
+    background-color: #111;
+    border: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu img {
+    width: 5vmin;
+}
+
+.sidebar {
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 5%;
+    background-color: rgb(13, 13, 13);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    border-radius: 3vmin 0 0 3vmin;
+}
+.list{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+    display: none;
+}
+
+.list button {
+    margin: 2vmin 2vmax 2vmin 2vmax;
+    box-sizing: border-box;
+    height: 10vmin;
+    background-color: #151515;
+    border-top: 1px solid #222;
+    border-left: 1px solid #222;
+    border-bottom: 1px solid #111;
+    border-right: 1px solid #111;
+    border-radius: 1.3vmin;
+    font-size: 3vmin;
+}
+
+.close {
+    position: absolute;
+    top: 0;
+    right: 16.5vmax;
+    width: 10vmin;
+    height: 100vmin;
+    color: white;
+    z-index: -1;
+    border: none;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.close img {
+    width: 5vmin;
+}
+
+#menutittle {
+    background-color: transparent;
+    border: none;
+    margin: 0 0 7vmin 0;
+}
